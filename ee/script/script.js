@@ -18,4 +18,12 @@ window.onload = function() {
             now = now >= end ? 0 : now + 1;
             $(slide[now]).animate({'top' : '0'}, 2000);
     }, 2000);
+
+    $('.notice li').eq(0).click(function() {
+        $('.popup').show().css('display', 'flex');
+    });
+
+    $('.pop-btn').click(function() {
+        $('.popup').hide();
+    });
 }
