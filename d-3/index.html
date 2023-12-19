@@ -5,30 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
 </head>
 <body>
     <div class="container">
         <header>
             <div class="logo">
-                
+                <a href="#">
+                    <img src="./images/logo.png" alt="logo">
+                </a>
             </div>
-            <ul class="menu">
-
+            <ul class="main-menu">
+                <li>
+                    <a href="#">OnSale</a>
+                </li>
+                <li>
+                    <a href="#">기획전</a>
+                </li>
+                <li>
+                    <a href="#">푸른마을 레시피</a>
+                </li>
+                <li>
+                    <a href="#">매장안내</a>
+                </li>
             </ul>
             <ul class="stop-menu">
-
+                <li><a href="#">로그인</a></li>
+                <span>&nbsp;|&nbsp;</span>
+                <li><a href="#">회원가입</a></li>
             </ul>
         </header>
 
         <div class="content">
             <div class="slide">
-
+                <a href="#">
+                    <img src="./images/slide1.jpg" alt="slide1">
+                    <h3>건강하게 자연 방목한 호주산 유기농 목초육 출시</h3>
+                </a>
+                <a href="#">
+                    <img src="./images/slide2.jpg" alt="slide2">
+                    <h3>항공 직송으로 더 신선한 생연어 2종</h3>
+                </a>
+                <a href="#">
+                    <img src="./images/slide3.jpg" alt="slide3">
+                    <h3>우리밀 찐빵 15% 할인 중</h3>
+                </a>
             </div>
             <div class="banner">
-
+                <a href="#">
+                    <img src="./images/banner.jpg" alt="banner">
+                    <div class="banner-text">
+                        <h3>유기농 목초육 출시</h3>
+                        <p>사육 환경부터 먹이, 항생제 여부까지 꼼꼼하게 따져보고 선택한 안심 소고기입니다.</p>
+                        <p>인기 부위인 채끝, 등심, 안심을 집에서도 근사하게 즐길 수 있는</p>
+                        <p>스테이크용으로 준비했으니 연말을 건강하고 맛있게 보내보세요.</p>
+                    </div>
+                    <div class="arrow">&gt;</div>
+                </a>
             </div>
             <div class="notice-gallery">
+                <div class="tab-area">
+                    <input type="radio" name="tabs" id="tab1" checked>
+                    <label for="tab1">공지사항</label>
+                    <input type="radio" name="tabs" id="tab2" checked>
+                    <label for="tab2">갤러리</label>
 
+                    <div id="content1" class="notice">
+                        공지사항 : 집가고싶ㅎ당
+                    </div>
+                    <div id="content2" class="gallery">
+                        갤러리 : 집가고싶어요
+                    </div>
+                </div>
             </div>
             <div class="quick">
 
@@ -41,13 +91,19 @@
 
     <footer>
         <div class="logo">
-
+            <a href="#">
+                <img src="./images/logo.png" alt="logo">
+            </a>
         </div>
         <div class="right">
-            <p class="copyright"></p>
-            <div class="footer-menu">
-
-            </div>
+            <p class="copyright">Copyright &copy; 2023 푸른마을 All rights reserved.</p>
+            <ul class="footer-menu">
+                <li>회사소개</li>
+                <li>가맹안내</li>
+                <li>채용정보</li>
+                <li>이용약관</li>
+                <li>개인정보처리방침</li>
+            </ul>
         </div>
     </footer>
 </body>
