@@ -364,3 +364,7 @@ footer {
 .sns a:nth-child(3) div {
     background-color: black;
 }
+
+footer img {
+    filter: grayscale(100%);   
+}
