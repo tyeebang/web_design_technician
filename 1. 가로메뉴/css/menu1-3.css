@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+}
+
+.logo {
+    width: 200px;
+    height: 100%;
+}
+
+.logo a, .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu {
+    width: 800px;
+    height: 50%;
+    margin-top: 50px;
+}
+
+.menu a {
+    text-align: center;
+    transition: .75s;
+}
+
+.main-menu {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.main-menu li {
+    width: 25%;
+    height: 100%;
+}
+
+.main-menu a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    background-color: lightpink;
+    color: antiquewhite;
+}
+
+.main-menu a:hover {
+    background-color: chocolate;
+    color: lightcyan;
+}
+
+.sub-menu {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 1200px;
+    max-height: 0px;
+    padding: 0 50px 0 350px;
+    background-color: lightskyblue;
+    overflow: hidden;
+    transition: .75s;
+}
+
+.sub-menu li {
+    width: 25%;
+    height: 25%;
+}
+
+.sub-menu li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 35px;
+    color: lightcyan;
+}
+
+.sub-menu li a:hover {
+    background-color: deepskyblue;
+}
+
+.menu:hover .sub-menu {
+    max-height: 140px;
+}
+
+.another {
+    width: 100%;
+    height: 300px;
+}
