@@ -1,0 +1,298 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    position: relative;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: limegreen;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100%;
+}
+
+.logo a {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    width: 800px;
+    height: 50%;
+    margin-top: 50px;
+    z-index: 1000000;
+}
+
+.menu a {
+    text-align: center;
+    transition: .5s;
+}
+
+.main-menu {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.main-menu a {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.main-menu a:hover {
+    background-color: mediumseagreen;
+    color: #666;
+}
+
+.sub-menu {
+    display: flex;
+    max-height: 0;
+    height: 105px;
+    margin-left: -400px;
+    padding-left: 400px;
+    background-color: rgba(225, 225, 225, .5);
+    overflow: hidden;
+    transition: .5s;
+}
+
+.sub-menu ul {
+    display: inline-block;
+    width: 200px;
+    height: 100%;
+}
+
+.sub-menu li {
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+}
+
+.sub-menu a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 35px;
+    color: limegreen;
+}
+
+.sub-menu a:hover {
+    background-color: rgba(225, 225, 225, .75);
+    color: mediumseagreen;
+}
+
+.menu:hover .sub-menu {
+    max-height: 105px;
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+    27% {
+        left: 0;
+    }
+    33% {
+        left: -100%;
+    }
+    61% {
+        left: -100%;
+    }
+    66% {
+        left: -200%;
+    }
+    95% {
+        left: -200%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.wrapper {
+    position: absolute;
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 6s infinite;
+}
+
+.slide a {
+    position: relative;
+}
+
+.slide p {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    background-color: rgba(171, 255, 46, .5);
+    font-size: 24px;
+    padding: 10px;
+}
+
+.contents {
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+
+.content {
+    width: 400px;
+    height: 100%;
+}
+
+.content > p {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #333;
+    color: greenyellow;
+}
+
+.list {
+    width: 100%;
+    height: 150px;
+    background-color: rgba(51, 51, 51, .3);
+    border: 1px solid black;
+}
+
+.list p {
+    width: 95%;
+    height: 23%;
+    line-height: 35px;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+}
+
+.list a {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.imgs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(51, 51, 51, .3);
+    border: 1px solid black;
+}
+
+.imgs img {
+    width: 120px;
+}
+
+.pop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 100000000000;
+}
+
+.pop-list {
+    width: 600px;
+    height: 300px;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.pop-list hr {
+    margin: 15px 0;
+}
+
+.pop-list button {
+    width: 75px;
+    height: 35px;
+    margin-top: 125px;
+    margin-left: 490px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+}
+
+footer .logo {
+    filter: grayscale(1);
+}
+
+.copy {
+    width: 600px;
+    height: 100%;
+    line-height: 100px;
+    text-align: center;
+}
+
+.copy p {
+    color: yellowgreen;
+}
+
+.family {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100%;
+}
+
+.family select {
+    width: 200px;
+    height: 50px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    outline: none;
+    border-radius: 50px;
+    background-color: honeydew;
+    color: chartreuse;
+}
