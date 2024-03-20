@@ -173,13 +173,144 @@ header {
 }
 
 .tab_area {
-    overflow: hidden;
+    width: 400px;
+    height: 100%;
+}
+
+.tab_area input {
+    display: none;
+}
+
+.tab_area label {
+    display: inline-block;
+    width: 75px;
+    height: 20%;
+    line-height: 40px;
+    text-align: center;
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+.conts {
+    width: 100%;
+    height: 80%;
+}
+
+.content {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+#notice ul {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#notice li {
+    display: inline-block;
+    justify-content: space-between;
+    width: 95%;
+    height: 24%;
+    margin: 0 10px;
+}
+
+#notice a {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    border-bottom: 1px solid black;
+}
+
+#gallery {
+    justify-content: space-around;
+    align-items: center;
+}
+
+#gallery a {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+#gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#tab1:checked ~ .conts #notice {
+    display: block;
+}
+
+#tab2:checked ~ .conts #gallery {
+    display: flex;
+}
+
+.banner {
+    width: 400px;
+    height: 100%;
+}
+
+.quick {
     width: 400px;
     height: 100%;
 }
 
 footer {
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     height: 100px;
-    background-color: green;
+    background-color: antiquewhite;
+}
+
+footer .logo {
+    filter: grayscale(1);
+}
+
+.copy {
+    width: 600px;
+    height: 100%;
+    text-align: center;
+    line-height: 100px;
+}
+
+.sns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 100%;
+}
+
+.sns a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+}
+
+.sns img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.sns a:nth-child(1) {
+    background-color: greenyellow;
+}
+
+.sns a:nth-child(2) {
+    background-color: deepskyblue;
+}
+
+.sns a:nth-child(3) {
+    background-color: crimson;
 }
