@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="fir">레이어 팝업창</button>
+    <button class="sec">모달 레이어 팝업창</button>
+
+    <div class="layer" style="display: none; width: 600px; height: 300px;">
+        <p>레이어 팝업창 입니다.</p>
+        <button>X 닫기</button>
+    </div>
+
+    <div class="modal" style="display: none; justify-content: center; align-items: center; width: 100vmax; height: 100vmax; background-color: rgba(0, 0, 0, .5);">
+        <div style="width: 600px; height: 300px;">
+            <p>모달 레이어 팝업창입니다.</p>
+            <button>X 닫기</button>
+        </div>
+    </div>
+
+    <script src="./jquery-1.12.3.js"></script>
+    <script src="./scirpt.js"></script>
+</body>
+</html>
