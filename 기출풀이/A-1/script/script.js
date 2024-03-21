@@ -6,4 +6,10 @@ window.onload = function() {
     $('.pop button').click(function() {
         $('.pop').hide()
     })
+
+    $('.direct p').hover(function() {
+        $('.direct img').css('filter', 'grayscale(1)')
+    }, function() {
+        $('.direct img').css('filter', 'none')
+    })
 }
