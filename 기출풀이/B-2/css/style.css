@@ -1,0 +1,300 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: 100vmax;   
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: aquamarine;
+    padding: 0px calc(50vmax - 600px);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100%;
+}
+
+.logo a {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    width: 800px;
+    height: 50%;
+    margin-top: 50px;
+    z-index: 1000000;
+}
+
+.menu a {
+    text-align: center;
+    transition: .5s;
+}
+
+.main-menu {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.main-menu a {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    color: darkslateblue;
+}
+
+.main-menu a:hover {
+    background-color: mediumaquamarine;
+    color: white;
+}
+
+.sub-menu {
+    display: flex;
+    width: 1200px;
+    max-height: 0px;
+    background-color: aqua;
+    margin-left: -400px;
+    padding-left: 400px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.sub-menu ul a {
+    display: inline-block;
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.sub-menu ul a:hover {
+    background-color: darkcyan;
+    color: darkturquoise;
+}
+
+.menu:hover .sub-menu {
+    max-height: 140px;
+}
+
+@keyframes slide {
+    0% {
+        top: 0;
+    }
+    23% {
+        top: 0;
+    }
+    33% {
+        top: -100%;
+    }
+    56% {
+        top: -100%;
+    }
+    66% {
+        top: -200%;
+    }
+    90% {
+        top: -200%;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.slide {
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.wrapper {
+    position: absolute;
+    width: 100%;
+    height: 300%;
+    animation: slide 7.5s infinite;
+}
+
+.wrapper img {
+    display: block;
+}
+
+.contents {
+    display: flex;
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.content {
+    width: 400px;
+    height: 100%;
+}
+
+.content > p {
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: aquamarine;
+    color: darkslateblue;
+}
+
+.notice-list {
+    width: 100%;
+    height: 165px;
+}
+
+.notice-list p {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 23%;
+    line-height: 40px;
+    border-bottom: 1px solid black;
+    padding: 0 5px;
+}
+
+.notice-list a:nth-child(2) p, 
+.notice-list a:nth-child(4) p {
+    background-color: lightgray;
+}
+
+.gallery-list {
+    width: 100%;
+    height: 165px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#gallery img {
+    width: 120px;
+}
+
+.direct {
+    position: relative;
+    width: 400px;
+    height: 100%;
+}
+
+.direct p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 125px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.pop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.inner {
+    width: 600px;
+    height: 300px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.inner hr {
+    margin: 10px 0;
+}
+
+.inner button {
+    width: 100px;
+    height: 40px;
+    margin-top: 125px;
+    margin-left: 475px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100px;
+    background-color: aquamarine;
+    padding: 0 calc(50vmax - 600px);
+}
+
+.copy {
+    width: 900px;
+    height: 100%;
+    line-height: 100px;
+    text-align: center;
+}
+
+.copy p {
+    color: darkslateblue;
+}
+
+.r-footer {
+    width: 300px;
+    height: 100%;
+}
+
+.sns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.sns img {
+    height: 40px;
+    border-radius: 25%;
+}
+
+.family {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.family select {
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    padding: 0 15px;
+}
