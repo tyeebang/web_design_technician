@@ -175,6 +175,12 @@ header {
 
 .gallery-list img {
     width: 120px;
+    opacity: .3;
+    transition: .5s;
+}
+
+.gallery-list img:hover {
+    opacity: .9;
 }
 
 .pop {
