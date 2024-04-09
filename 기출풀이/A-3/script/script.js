@@ -3,6 +3,6 @@ window.onload = function() {
         $('.pop').show().css('display', 'block')
     })
     $('.pop button').click(function() {
-        $('.pop').hide()
+        $('.pop').css('display', 'none')
     })
 }

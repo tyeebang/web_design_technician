@@ -263,7 +263,7 @@ header {
 }
 
 .direct a:nth-child(2):hover {
-    font-weight: bold;
+    font-size: 18px;
 }
 
 .pop {
