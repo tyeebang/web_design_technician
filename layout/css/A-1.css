@@ -1,0 +1,240 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: mediumpurple;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100%;
+}
+
+.logo a {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 2em;
+}
+
+.menu {
+    display: flex;
+    width: 800px;
+    height: 50%;
+    margin-top: 50px;
+    z-index: 1000000;
+}
+
+.menu a {
+    display: inline-block;
+    text-align: center;
+    transition: .5s;
+}
+
+.menu > li > a {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+.menu li ul a {
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    background-color: purple;
+    color: lemonchiffon;
+}
+
+.menu > li > a:hover {
+    background-color: lemonchiffon;
+    color: purple;
+}
+
+.addClass {
+    background-color: lemonchiffon;
+    color: purple !important;
+}
+
+.menu li ul a:hover {
+    background-color: rgb(66, 0, 66);
+    color: white;
+}
+
+.menu ul {
+    max-height: 0px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu:hover ul {
+    max-height: 140px;
+}
+
+@keyframes slide {
+    0% {
+        top: 0;
+    }
+    27% {
+        top: 0;
+    }
+    33% {
+        top: -100%;
+    }
+    60% {
+        top: -100%;
+    }
+    66% {
+        top: -200%;
+    }
+    94% {
+        top: -200%;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+#slide {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.s_wrapper {
+    position: absolute;
+    width: 100%;
+    height: 300%;
+    animation: slide 7.5s 0s infinite;
+}
+
+#slide a {
+    display: inline-block;
+    width: 1200px;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    color: white;
+    font-size: 48px;
+}
+
+#slide a:nth-child(1) {
+    background-color: lightblue;
+}
+
+#slide a:nth-child(2) {
+    background-color: lightcoral;
+}
+
+#slide a:nth-child(3) {
+    background-color: lightgreen;
+}
+
+#contents {
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+
+.content {
+    width: 400px;
+    height: 100%;
+}
+
+#tab input {
+    display: none;
+}
+
+#tab label {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: purple;
+    color: lemonchiffon;
+    cursor: pointer;
+}
+
+.tab_cont {
+    display: none;
+    width: 100%;
+    height: calc(100% - 50px);
+    text-align: center;
+}
+
+#tab input[id = 'tab1']:checked ~ #notice {
+    display: block;
+}
+
+#tab input[id = 'tab2']:checked ~ #gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#notice a {
+    display: inline-block;
+    width: 95%;
+    height: 24%;
+}
+
+#notice p {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    border-bottom: 1px solid black;
+}
+
+#gallery a {
+    width: 25%;
+    height: 50%;
+    line-height: 75px;
+    background-color: purple;
+    color: white;
+}
+
+#banner a, 
+#quick a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 200px;
+    text-align: center;
+    background-color: lightgrey;
+    color: white;
+    font-size: 48px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+}
